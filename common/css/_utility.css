@@ -1,0 +1,12 @@
+:root{
+    --mainColor:#7b54c5;
+    --mainTitlelColor: rgba(255,255,255,0.85);
+    --titleColor_1:#4c4947;
+    --white:#fff;
+    --flipCardCorrect:#d4edda;
+    --flipCardCorrect-bg:#155724;
+    --flipCardIncorrect:#f8d7da;
+    --flipCardIncorrect-bg:#721c24;
+
+}
+

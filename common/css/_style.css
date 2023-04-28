@@ -1,0 +1,33 @@
+@import url(_utility.css);
+
+header {
+  font-size: 10rem;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+
+.btn_replace {
+  background-color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  color: var(--white);
+}
+.btn_replace:hover {
+  background-color: var(--white);
+  border: 1px solid var(--mainColor);
+  color: var(--mainColor);
+}
+
+.btn_end {
+  background-color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  color: var(--white);
+}
+.btn_end:hover {
+  background-color: var(--white);
+  border: 1px solid var(--mainColor);
+  color: var(--mainColor);
+}

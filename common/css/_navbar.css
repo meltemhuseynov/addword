@@ -1,0 +1,56 @@
+@import url(_utility.css);
+@import url(_style.css);
+@import url(_resposive.css);
+
+
+ .navbar a{
+    background-color: var(--mainColor);
+    color:  var(--mainTitlelColor);
+    margin: 10px;
+    border: 1px solid  var(--mainColor);
+    border-radius: 10px;
+
+
+}
+
+.navbar .container-fluid  .collapse .navbar-nav a:hover{
+    color:  var(--white);
+    border: 1px solid  var(--mainTitlelColor);
+    border-radius: 10px;
+
+}
+
+.navbar .container-fluid  .collapse .navbar-nav  a.active{
+    border: 1px solid  var(--white);;
+    background-color: var(--white);
+    color: var(--mainColor); 
+    font-weight: 500;    
+    border-radius: 10px;
+    
+}
+
+
+.collapseBars{
+    color: var(--white);
+}
+
+.navbar{
+    /*   z-index should be above .close-navbar-toggler */
+      z-index:2;
+      background-color: var(--mainColor);
+      color: var(--mainTitlelColor);
+      height: 5rem;
+ 
+    }
+    .close-navbar-toggler{
+      position:absolute;
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+      z-index:1;
+      cursor:pointer;
+    }
+    .close-navbar-toggler.collapsed{
+      z-index:-1;
+    }

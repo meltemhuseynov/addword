@@ -1,0 +1,105 @@
+/* tables and smaller */
+
+@media (max-width: 768px) {
+
+  /* navbar */
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+.navbar a{
+  background-color: var(--mainColor);
+  color:  var(--mainTitlelColor);
+  border: 1px solid  var(--mainColor);
+  border-radius: none;
+  margin: 0;
+
+}
+.navbar .container-fluid  .collapse .navbar-nav a:hover{
+  color:  var(--white);
+  border: 1px solid  var(--mainTitlelColor);
+  border-radius: none;
+
+}
+
+.navbar .container-fluid  .collapse .navbar-nav  a.active{
+  border: 1px solid  var(--white);;
+  background-color: var(--white);
+  color: var(--mainColor); 
+  font-weight: 500;    
+  border: 1px solid  var(--mainColor);
+  border-radius: none;
+  
+}
+
+
+
+  /* Word List */
+
+  .openList.active {
+    display: revert;
+
+    font-size: 0.8rem;
+  }
+
+  .tableResposive {
+    display: none;
+  }
+ 
+  .closeOpen{
+    display: revert !important;
+    color: var(--mainColor) ;
+    font-size: 12px;
+    cursor: pointer;
+    align-items: center;
+ 
+ }
+ 
+  /* Word Quiz */
+
+  .quiz-box {
+    width: 350px;
+    height: 500px;
+    font-size: 12px;
+  }
+
+  .score_box {
+    width: 350px;
+    height: 500px;
+  }
+
+  .score_box .score_text span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .score_box .icon img {
+    height: 50%;
+  }
+  #storyList #list{
+    text-align: center;
+  }
+
+  /* Worcards */
+  .flip-card {
+    width: 350px;
+    height: 350px;
+  }
+  #storySection .storyControls .auido-control #volumeControl #volume-bar {
+    width: 23%;
+  }
+}
+
+
+/* //TODO */
+/* tamamlandı 1. Add butonun ustune gelince siyah oluyor onu duzelt
+tamamlandı2. Entere basinca add fonksiyonunu cagir
+tamamlandı4. Plus isareti yerine arrow isareti koy
+tammalandı5. Next Chapter eyer son indexde ise gozukmesin!
+tammalandı6. Navbardaki secilince border radius ver yuvarlak gozuksun
+tamamlandı 7. Word Cards ekraninda yukarda kac tane soru var goster ve ilerledikce veya bilmedice kactane kaldi goster.
+Tamamlandı 8. Word quizde progress bari duzelt
+tamamlandı 9. Word quizde start again calismiyor
+tamamlandı10. Word quizde son soruya gelince next quiz yerine finish quiz 
+tamamlandı11. Mobil moddayken story ekraninda ses artirma ve azaltma calismiyor
+tammaland12. Next chaptere deyince mobil moddayken sayfanin basina donsun
+13. mobil moddayken bazi durumdayken birine tikladigin zaman iki eleman seciliyor (ornek agha2 ve test sondan 1 ve 3) */

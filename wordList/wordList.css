@@ -1,0 +1,150 @@
+@import url(../common/css/_utility.css);
+@import url(../common/css/_style.css);
+@import url(../common/css/_navbar.css);
+@import url(../common/css/_resposive.css);
+
+
+
+/* add area */
+body {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+
+
+ .textNullError #nameError {
+   display: none;
+   font-size: 0.8em;
+}
+
+ .textNullError #nameError.visible {
+   display: block;
+}
+
+
+
+
+
+#displayPlus {
+   display: none;
+   transition: all 0.3s ease;
+}
+
+#displayPlus.active {
+   display: flex;
+}
+
+
+#AddButton .btnAddNewWord {
+   background-color: var(--mainColor);
+   border:1px solid var(--mainColor);
+   color: var(--white);
+}
+
+#AddButton .btnAddNewWord:hover {
+   background-color: var(--white);
+   border: 1px solid var(--mainColor);
+   color: var(--mainColor);
+}
+
+
+
+/* table area */
+
+
+.tableArea .card-header .filters span.active {
+   color: var(--mainColor);
+}
+
+.tableArea .card-header .filters span {
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+.tableArea .card-header-filter {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.tableArea .dropdown-toggle::after {
+   display: none;
+}
+
+/* table task-list */
+.openList {
+   display: none;
+
+}
+.closeOpen{
+   display: none;
+
+}
+
+
+/* footer */
+
+
+footer {
+   justify-content: center;
+   text-align: center;
+   margin-top: auto;
+}
+
+.pagination ul {
+   display: flex;
+   background-color: var(--white);
+   color: var(--mainColor);
+   padding: 8px;
+   border-radius: 50px;
+}
+
+.pagination ul li {
+   list-style: none;
+   line-height: 45px;
+   text-align: center;
+   font-size: 14px;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.pagination ul li.numb {
+   border-radius: 50%;
+   height: 45px;
+   width: 45px;
+   margin: 0 3px;
+}
+
+.pagination ul li.dots {
+   font-size: 18px;
+   cursor: default;
+}
+
+.pagination ul li.btn {
+   color: var(--mainColor);
+   padding: 0 5px;
+}
+
+.pagination ul li.prev {
+   border-radius: 10px 5px 5px 10px;
+}
+
+.pagination ul li.next {
+   border-radius: 5px 10px 10px 5px;
+}
+
+.pagination ul li.active,
+.pagination ul li.numb:hover,
+.pagination ul li.btn:hover {
+   background-color:var(--mainColor);
+   color: var(--white);
+}
+
+.paginationUl .prev, .next{ 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

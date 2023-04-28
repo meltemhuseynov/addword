@@ -1,0 +1,153 @@
+@import url(../common/css/_utility.css);
+@import url(../common/css/_style.css);
+@import url(../common/css/_navbar.css);
+
+
+/* Start Button */
+#startButton .btn_start,
+.flip-card,
+.score_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#startButton .btn_start.inactive {
+  display: none;
+
+}
+
+/* Card Body Flip Card */
+.flip-card.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 600px;
+  transform-origin: center right;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.flip-card .flip-card-inner.correct {
+  transform: rotateY(180deg);
+}
+
+.flip-card .flip-card-inner.incorrect {
+  transform: rotateY(90);
+}
+
+.flip-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-front {
+  background-color: var(--white);
+  color: black;
+}
+
+.flip-card-back {
+  background-color: var(--white);
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.flip-card-front.correct {
+  background-color: var(--flipCardCorrect);
+  color: var(--flipCardCorrect-bg);
+}
+
+.flip-card-back.correct {
+  background-color: var(--flipCardCorrect);
+  color: var(--flipCardCorrect-bg);
+}
+
+.flip-card-front.incorrect {
+  background-color: var(--flipCardIncorrect);
+  color: var(--flipCardIncorrect-bg);
+}
+
+.flip-card-back.incorrect {
+  background-color: var(--flipCardIncorrect);
+  color: var(--flipCardIncorrect-bg);
+}
+
+.badge {
+  background-color: var(--mainColor);
+  color: var(--white);
+}
+
+/* Score box */
+
+
+
+.score_box {
+  width: 550px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(0.7);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.score_box.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.score_text .badge {
+  background-color: var(--mainColor);
+  color: var(--white);
+
+}
+
+.score_box .score_text span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.score_box .score_text {
+  margin-bottom: 30px;
+}
+
+.btn-success {
+  color: black !important;
+  background-color: var(--white) !important;
+  border: none !important;
+}
+
+.btn-danger {
+  color: black !important;
+  background-color: var(--white) !important;
+  border: none !important;
+}

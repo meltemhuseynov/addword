@@ -1,0 +1,146 @@
+@import url(../common/css/_utility.css);
+@import url(../common/css/_style.css);
+@import url(../common/css/_navbar.css);
+
+#story .container .row p {
+  font-family: Open Sans, Arial, sans-serif;
+  line-height: 1.7em;
+  font-weight: 500;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--titleColor);
+}
+
+/* #story .container.row */
+
+/*bars*/
+ #bars {
+  background-color: var(--mainColor);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#list li{
+  cursor: pointer;
+
+
+}
+ #list li.playing {
+  background-color: var(--white);
+  color:var(--mainColor);
+}
+
+/* story Section */
+
+#storySection .title {
+  text-align: center;
+  color: var(---titleColor_1);
+}
+
+/* story Section _ auido controler */
+#storySection .storyControls .auido-control #play,
+#volume {
+  color:var(--mainColor);
+  font-size: 25px;
+}
+
+#storySection .storyControls .auido-control #volumeControl {
+  display: flex;
+  justify-content: end;
+}
+
+#storySection .storyControls .auido-control #volumeControl #volume-bar {
+  width: 10%;
+}
+
+#storySection .storyControls .auido-control .controls {
+  height: 80px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#storySection .storyControls .auido-control .controls .progress_control {
+  display: flex;
+}
+
+#storySection
+  .storyControls
+  .auido-control
+  .controls
+  .progress_control
+  #progress-bar {
+  width: 95%;
+  color:var(--mainColor);
+}
+
+#storySection .storyControls .auido-control .controls .times {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*footer */
+
+#storySection footer .controls_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#storySection footer .controls_button #prev,
+#next {
+  background-color:var(--mainColor);
+  color:var(--white);
+  border-color: var(--mainColor);
+  padding: 0, 5px;
+}
+#storySection footer .controls_button #next:hover,
+#prev:hover {
+  background-color:var(--white);
+  color: var(--mainColor);
+  border-color: var(--mainColor);
+}
+
+#storySection footer .controls_button #prev::before {
+  content: "\f053";
+  font-family: "Font Awesome 6 Free";
+  opacity: 0;
+  font-weight: 900;
+  padding-right: 3px;
+}
+
+#storySection footer .controls_button #prev:hover::before {
+  opacity: 1;
+  transition: all 0.5s;
+  font-family: "Font Awesome 6 Free";
+}
+
+#storySection footer #storySection footer .controls_button #next::after {
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  opacity: 0;
+  font-weight: 900;
+}
+
+#storySection footer .controls_button #next:hover::after {
+  opacity: 1;
+  transition: all 0.5s;
+  font-family: "Font Awesome 6 Free";
+}
+
+
+#upBtn {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:var(--white);
+  color: var(--mainColor) ;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid  var(--mainColor)  ;
+}

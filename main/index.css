@@ -1,0 +1,30 @@
+@import url(../common/css/_utility.css);
+@import url(../common/css/_style.css);
+@import url(../common/css/_navbar.css);
+
+
+#storiesChoose .container {
+    color: var(--titleColor_1)
+}
+
+
+#storiesChoose .container .card{
+    width: 20rem;
+}
+
+#storiesChoose .container .card .card-header img{
+    height: 15rem;
+}
+
+#storiesChoose .container .card .card-body a{
+    background-color: var(--mainColor);
+    color:var(--white) ;
+}
+
+
+#storiesChoose .container .card .card-body a:hover{
+    background-color: var(--white);
+    color:var(--mainColor) ;
+    border: 1px solid var(--mainColor);
+
+}
