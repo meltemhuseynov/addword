@@ -1,6 +1,6 @@
 
 const quizshowScore=(knowWords, unknowWords) =>{
-    let tag = `<span><b>Bilinen kelimeler:</b> ${knowWords}</span> <br><br> <span><b>Öğrenilmeye devam edilen kelimeler:</b> ${unknowWords}</span>`;
+    let tag = `<span><b>Words learned:</b> ${knowWords}</span> <br><br> <span><b>Unlearned words:</b> ${unknowWords}</span>`;
     quizUI.score_text.innerHTML = tag;
   }
   
